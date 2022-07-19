@@ -16,3 +16,7 @@
    DTD(특정 문서가 어떻게 구성되어야 하는지)를 통해서 현재의 웹문서가 어떤 버전의 HTML 기술로 작성되었는지 웹브라우저에 전달합니다.  
    브라우저는 선언된 문서 버전에 맞는 HTML 기술로 페이지를 로드합니다.  
    선언하는 이유는 HTML 버전마다 적용되는 태그가 있고, 적용되지 않는 태그가 있습니다. 그래서 HTML의 버전을 선언하여 어떤 버전을 사용할 것인지 결정하는 역할을 합니다.
+### 출처
+https://www.frontendinterviewhandbook.com/kr/html-questions#data-%EC%86%8D%EC%84%B1%EC%9D%80-%EB%AC%B4%EC%97%87%EC%97%90-%EC%A2%8B%EC%9D%80%EA%B0%80%EC%9A%94
+<br>
+https://dasima.xyz/doctype-html/
