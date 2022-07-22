@@ -6,7 +6,7 @@
 2. 개념 설명  
    DOCTYPE은 document type의 약어입니다. DOCTYPE은 항상 DTD(Document Type Definition)와 관련됩니다.
    <br>  
-   DTD는 특정 문서가 어떻게 구성되어야 하는지 정의합니다. 예를들어 `<button>`는 `<span>`를 포함할 수 있지만, `<div>`는 그럴 수 없다. 반면, DOCTYPE은 문서가 존중할만한 DTD를 선언합니다. 예를들어 이 문서는 HTML DTD를 존중한다. 
+   DTD는 특정 문서가 어떻게 구성되어야 하는지 정의합니다. 예를들어 `<button>`는 `<span>`를 포함할 수 있지만, `<div>`는 포함될 수 없다. DTD를 통해서 현재의 웹문서가 어떤 버전의 HTML    기술로 작성되었는지 웹브라우저에 전달합니다.
    <br>  
    웹 페이지는 DOCTYPE 선언이 필요합니다.
    <br>  
