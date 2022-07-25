@@ -5,6 +5,8 @@
 - data- 속성
 - 시맨틱 마크업
 ## PART 2) JavaScript
+- 클로저
+- 호이스팅
 ## PART 3) React
 - Class Component vs. Function Component
 ## PART 4) Web
