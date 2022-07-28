@@ -4,6 +4,7 @@
 - DOCTYPE
 - data- 속성
 - 시맨틱 마크업
+- margin, padding
 ## PART 2) JavaScript
 - 클로저
 - 호이스팅
