@@ -15,7 +15,6 @@ UI를 구축하기 위한 자바스크립트 프론트엔드 라이브러리
 - 다른 프레임워크와 혼용 가능
 
 다른 프레임워크나 라이브러리와 혼용 가능 React 에선 UI만 신경쓰고(View), 빠져있는 부분은 필요한 라이브러리를 사용하여 설정 가능
-출처: https://kangdanne.tistory.com/189?category=1009227 [Hello, Dan:d World!:티스토리]
 
 컴포넌트 : 작은 단위로 만들어져 그것을 조립하듯이 개발하는 방법으로, 캡슐화, 확장설, 결합성, 재사용성의 이점이 있음
 
@@ -30,3 +29,4 @@ React란 UI를 구축하기 위한 자바스크립트 프론트엔드 라이브�
 
 - https://www.howdy-mj.me/dom/what-is-dom/
 - https://velog.io/@ye-ji/React-%EC%98%88%EC%83%81-%EB%A9%B4%EC%A0%91-%EC%A7%88%EB%AC%B8-%EB%A6%AC%EC%8A%A4%ED%8A%B8
+-  https://kangdanne.tistory.com/189?category=1009227 [Hello, Dan:d World!:티스토리]
