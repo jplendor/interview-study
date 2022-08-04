@@ -16,6 +16,7 @@
 - React의 개념과 장점, 그리고 컴포넌트란 무엇인가?
 - Virtual DOM
 ## PART 4) Web
+- 브라우저 렌더링
 ## PART 5) CS
 ## PART 6) 기타
 - 모듈 번들러, 트랜스컴파일러
