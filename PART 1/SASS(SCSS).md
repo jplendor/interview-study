@@ -26,6 +26,10 @@ CSS의 단점을 바탕으로 SASS(SCSS)를 쓰는 이유를 알고 있는가?
 - function 같은게 없으니, 규모가 큰 프로제트의 경우 자동화하기 어렵고 모든 것을 수동으로 변경해야 한다.
 - 결국 중복되는 코드가 많아 코드 줄수가 길어져 유지보수하기 어렵다.
 
+> SCSS와 SASS의 차이  
+> https://www.geeksforgeeks.org/what-is-the-difference-between-scss-and-sass/  
+> https://www.interviewbit.com/blog/sass-vs-scss/
+
 ### CSS 전처리기(Preprocessor) 언어
 
 - ex. Sass, Less, stylus
@@ -56,6 +60,8 @@ CSS의 단점을 바탕으로 SASS(SCSS)를 쓰는 이유를 알고 있는가?
 
 ## 3. 답변
 
+SASS(SCSS)는 CSS의 전처리기 스크립팅 언어로, 변수, 중첩, 모듈화, mixins, extend, 연산 등의 기능이 있습니다.
+이러한 기능들을 통해 CSS보다 재사용으로 인한 효율적인 코드 관리가 가능하고 가독성과 유지 관리가 쉽습니다.
 
 🔗 참고 자료
 - https://sass-lang.com
@@ -77,10 +83,125 @@ body {
   color: $primary-color;
 }
 ```
-2) Nesting
-3) Partials
-4) Modules
-5) Mixins
-6) Extend/Inheritance
-7) Operators
 
+2) Nesting: HTML의 계층 구조와 동일하게 CSS 선택자를 중첩할 수 있다.
+```
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+```
+
+3) Partials & 4) Modules: CSS를 모듈화함으로써 유지 관리를 더 쉽게 한다.
+
+(부분 파일은 앞에 _를 붙인다.)
+```
+// _base.scss 
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+```
+(@use 규칙을 통해 다른 SASS 파일을 모듈로 로드한다.)
+```
+// styles.scss
+@use 'base';
+
+.inverse {
+  background-color: base.$primary-color;
+  color: white;
+}
+```
+
+5) Mixins: (연관성은 없지만) 재사용하는 CSS 그룹이 있을 때 (변수를 통해 값을 전달할 수도 있다.) / include한 class에 스타일을 복제
+
+@mixin으로 선언
+@include로 적용
+```
+@mixin theme($theme: DarkGray) {
+  background: $theme;
+  box-shadow: 0 0 1px rgba($theme, .25);
+  color: #fff;
+}
+
+.info {
+  @include theme;
+}
+.alert {
+  @include theme($theme: DarkRed);
+}
+.success {
+  @include theme($theme: DarkGreen);
+}
+```
+
+6) Extend/Inheritance: (연관성이 있으면서) 재사용하는 CSS 그룹이 있을 때 (변수 사용 불가능)
+
+%으로 선언
+@extend로 적용
+```
+/* This CSS will print because %message-shared is extended. */
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+// This CSS won't print because %equal-heights is never extended.
+%equal-heights {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.message {
+  @extend %message-shared;
+}
+
+.success {
+  @extend %message-shared;
+  border-color: green;
+}
+
+.error {
+  @extend %message-shared;
+  border-color: red;
+}
+
+.warning {
+  @extend %message-shared;
+  border-color: yellow;
+```
+
+> mixin와 extend의 차이: https://www.geeksforgeeks.org/include-vs-extend-in-sass/
+
+7) Operators: 연산(+, -, *, math.div(), %)
+```
+@use "sass:math";
+
+.container {
+  display: flex;
+}
+
+article[role="main"] {
+  width: math.div(600px, 960px) * 100%;
+}
+
+aside[role="complementary"] {
+  width: math.div(300px, 960px) * 100%;
+  margin-left: auto;
+}
+```
