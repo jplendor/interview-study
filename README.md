@@ -6,6 +6,7 @@
 - 시맨틱 마크업
 - margin, padding
 - position
+- SASS(SCSS)
 ## PART 2) JavaScript
 - 클로저
 - 호이스팅
