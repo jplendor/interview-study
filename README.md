@@ -18,6 +18,7 @@
 - Virtual DOM
 ## PART 4) Web
 - 브라우저 렌더링
+- 주소창에 www.google.com을 검색하면 일어나는 일
 ## PART 5) CS
 ## PART 6) 기타
 - 모듈 번들러, 트랜스컴파일러
