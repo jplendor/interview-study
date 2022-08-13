@@ -11,6 +11,7 @@
 - 클로저
 - 호이스팅
 - AJAX
+- 실행 컨텍스트
 ## PART 3) React
 - Class Component vs. Function Component
 - 라이프사이클
