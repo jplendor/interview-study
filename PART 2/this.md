@@ -122,6 +122,11 @@ person.foo(function() {
 
 ```
 
+> [참고]  
+> 화살표 함수는 this에 대한 바인딩이 없다.  
+https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
+
 ## 3. 답변
 함수 안의 "this"는 함수 실행 방식에 따라 바인딩되는 값이 달라집니다. 함수 실행 방식으로는 크게 4가지가 있습니다.
 일반적인 함수 호출, 메서드 호출, 생성자 호출, call/apply/bind 메서드에 의한 간접 호출이 있습니다.
