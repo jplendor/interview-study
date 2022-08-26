@@ -7,6 +7,7 @@
 - margin, padding
 - position
 - SASS(SCSS)
+- Reset.css, Normalize.css
 ## PART 2) JavaScript
 - 클로저
 - 호이스팅
