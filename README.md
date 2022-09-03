@@ -15,6 +15,7 @@
 - 실행 컨텍스트
 - 스코프
 - 이벤트 버블링
+- == vs ===
 ## PART 3) React
 - Class Component vs. Function Component
 - 라이프사이클
