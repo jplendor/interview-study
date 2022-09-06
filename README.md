@@ -8,6 +8,7 @@
 - position
 - SASS(SCSS)
 - Reset.css, Normalize.css
+- z-index의 동작방식
 ## PART 2) JavaScript
 - 클로저
 - 호이스팅
